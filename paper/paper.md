@@ -93,7 +93,7 @@ The command-line prediction workflow accepted RefSeq assembly accessions or nucl
 
 We converted genome-protein-KO associations to Resource Description Framework (RDF), representing assemblies, proteins, and KOs with identifiers.org URIs. The graph retains individual protein assignments as well as assignment-level attributes. This allows retrieval of either a compact KO set for an assembly or the proteins and scores supporting a specific annotated function.
 The KofamScan definition file was also converted to RDF. KO descriptions were represented with skos:definition, while profile metadata included score thresholds and score types. Because definitions and assignments use shared KO identifiers, queries can join the observed genomic evidence to a description of its function. An assistant can consequently request relevant subsets of annotations and their definitions instead of receiving an entire proteome annotation table in its prompt.
-The RDF data were loaded into QLever and made queryable through SPARQL. Registering the dataset with TogoMCP enabled AI assistants to retrieve these annotations alongside other resources available through RDF Portal [@citesAsAuthority:Kinjo2026],[@citesAsAuthority:Kawashima2018]. The implemented integration supplies evidence for questions about the donors and acceptors used by a specified organism. It exposes the annotation resource; deployment of the trained trait classifier as a dedicated MCP prediction tool is a separate step.
+The RDF data were loaded into QLever and made queryable through SPARQL. Registering the dataset with TogoMCP enabled AI assistants to retrieve these annotations alongside other resources available through RDF Portal [@citesAsAuthority:Kinjo2026], [@citesAsAuthority:Kawashima2018]. The implemented integration supplies evidence for questions about the donors and acceptors used by a specified organism. It exposes the annotation resource; deployment of the trained trait classifier as a dedicated MCP prediction tool is a separate step.
 
 ## Literature-assisted phenotype collection
 
@@ -242,8 +242,6 @@ The analysis outputs include model artifacts, metric tables, split assignments, 
 # Acknowledgements and declarations
 
 We thank the BioHackathon 2026 organizers and participants and the maintainers of the resources used here. [TO CONFIRM: author contributions, funding, and competing interests.] LLMs assisted evidence extraction, trait prediction experiments, and manuscript drafting; authors must review the final text and underlying evidence.
-
-...
 
 # References
 
