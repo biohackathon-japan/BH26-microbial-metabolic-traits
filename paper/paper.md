@@ -1,15 +1,33 @@
 ---
-title: 'DBCLS BioHackathon 2026 report: Template for the very long title'
+title: 'TBA'
 title_short: 'BioHackJP26: How we found breakfast'
 tags:
   - Semantic web
   - Ontologies
   - Workflows
 authors:
-  - name: First Author
+  - name: Shuichi Kawashima
     affiliation: 1
     role: Writing – original draft
-  - name: Last Author
+  - name: Danil Ezhov
+    orcid: 0000-0000-0000-0000
+    affiliation: 2
+    role: Conceptualization, Writing – review & editing
+  - name: Akira R Kinjo
+    orcid: 0000-0000-0000-0000
+    affiliation: 2
+    role: Conceptualization, Writing – review & editing
+  - name: Julia Koblitz
+    affiliation: 1
+    role: Writing – original draft
+  - name: Takeru Nakazato
+    affiliation: 1
+    role: Writing – original draft
+  - name: Yoko Okabbepu
+    orcid: 0000-0000-0000-0000
+    affiliation: 2
+    role: Conceptualization, Writing – review & editing
+  - name: Risa Otsuka
     orcid: 0000-0000-0000-0000
     affiliation: 2
     role: Conceptualization, Writing – review & editing
