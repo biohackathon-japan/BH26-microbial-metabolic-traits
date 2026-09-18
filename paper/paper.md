@@ -112,7 +112,6 @@ Module scoring identified a median of six complete modules per genome. Mean comp
 B2 achieved macro AUPRC of 0.576 under genus-held-out evaluation and 0.560 under family-held-out evaluation, exceeding the taxonomic baseline by 0.104 and 0.180, respectively (Table 1). Bacformer-large alone performed similarly to B2 at genus level. The highest internal point estimates came from fusion models, reaching 0.625 and 0.585 for B2XL plus Bacformer-large. Two fusion configurations retained an advantage over B2 after correction across model variants, but their advantage over the KO-only ensemble B2XL was not statistically resolved.
 
 
-```markdown
 Table: Selected model comparisons. Values are macro AUPRC under taxonomically grouped cross-validation. The attention model shown here is the completed rerun without a KO-based protein prefilter.
 
 | Model | Held-out genus | Held-out family |
@@ -126,7 +125,6 @@ Table: Selected model comparisons. Values are macro AUPRC under taxonomically gr
 | B2XL KO ensemble | 0.602 | 0.573 |
 | B2XL plus ESM-2 | 0.616 | 0.584 |
 | B2XL plus Bacformer-large | 0.625 | 0.585 |
-```
 
 The completed attention-model rerun achieved 0.548 compared with 0.544 for mean pooling, a difference of 0.004 with a 95% confidence interval of −0.024 to 0.045. It therefore provided no clear evidence that attention improved on pooling in this setting.
 On the external genomes, B2 achieved 0.511 compared with 0.380 for the taxonomic baseline, a paired difference of 0.131 (95% confidence interval 0.100–0.167). Completed external evaluation of the two strongest internal fusion configurations did not support transfer of their internal gains. B2 was consequently retained as the deployment model. A random-split analysis produced 0.647 compared with 0.576 under genus-held-out evaluation, illustrating the importance of separating related genomes when estimating generalization.
@@ -136,7 +134,6 @@ Performance varied among traits. Sulfate reduction, sulfur oxidation, H2 oxidati
 
 On the 96-genome subset, anonymized gene-evidence prompts yielded AUPRC of 0.578 for Claude and 0.588 for GPT-6 Astra, compared with 0.666 for B2 and 0.697 for the strongest fusion model (Table 2). Supplying organism names raised Claude's score to 0.777. Named GPT reached 0.731 on 84 genomes; its paired difference from the strongest fusion model was 0.035, with a confidence interval including zero. Named-organism performance can benefit from previously published physiology and therefore does not establish equivalent performance for uncharacterized genomes.
 
-```markdown
 Table: LLM comparison on a 96-genome subset. The named GPT row used 84 complete responses; its paired comparisons were calculated on those same genomes. These values should not be compared directly with the full-cohort scores in Table 1.
 
 | Configuration | Genomes | Macro AUPRC |
@@ -149,7 +146,6 @@ Table: LLM comparison on a 96-genome subset. The named GPT row used 84 complete 
 | B2XL plus Bacformer-large | 96 | 0.697 |
 | Claude with organism name | 96 | 0.777 |
 | GPT-6 Astra with organism name | 84 | 0.731 |
-```
 
 Across 179 shared species, agreement between phenotype compilations was Cohen's kappa 0.61, compared with 0.52 between the model and the external compilation. Excluding H2 oxidation, for which the compilations labeled 125 versus 33 species positive, increased agreement between compilations to 0.68. These discrepancies identify label definitions and evidence coverage as priorities for curation, but do not establish a numerical ceiling on AUPRC.
 
