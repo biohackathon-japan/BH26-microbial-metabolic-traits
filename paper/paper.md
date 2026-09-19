@@ -12,7 +12,7 @@ authors:
     affiliation: 1
     role: Writing – original draft
   - name: Danil Ezhov
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-5548-6103
     affiliation: 2
     role: Conceptualization, Writing – review & editing
   - name: Akira R Kinjo
